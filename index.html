@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Quick List</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header class="header">
+
+    <img src="assets/logo.svg" alt="Quick List Logo" class="logo">
+
+  </header>
+
+  <main>
+
+    <section class="shopping-list">
+
+      <a href="#" class="back-button">← Voltar</a>
+
+      <h1>Compras da Semana</h1>
+
+      <form class="shopping-form">
+
+        <input type="text" class="item-input" placeholder="Adicione um novo item">
+
+        <button type="submit">
+          Adicionar item
+        </button>
+
+      </form>
+
+      <ul>
+
+        <li class="shopping-item">
+
+          <label>
+            <input type="checkbox" class="item-checkbox">
+            Pão de Forma
+          </label>
+
+          <button type="button" class="remove-item">
+            <img src="assets/button.png" alt="Remover Pão de Forma">
+          </button>
+
+        </li>
+
+        <li class="shopping-item">
+
+          <label>
+            <input type="checkbox" class="item-checkbox">
+            Café Preto
+          </label>
+
+          <button type="button" class="remove-item">
+            <img src="assets/button.png" alt="Remover Café Preto">
+          </button>
+
+        </li>
+
+        <li class="shopping-item">
+
+          <label>
+            <input type="checkbox" class="item-checkbox">
+            Suco de Laranja
+          </label>
+
+          <button type="button" class="remove-item">
+            <img src="assets/button.png" alt="Remover Suco de Laranja">
+          </button>
+
+        </li>
+
+        <li class="shopping-item">
+
+          <label>
+            <input type="checkbox" class="item-checkbox">
+            Bolacha
+          </label>
+
+          <button type="button" class="remove-item">
+            <img src="assets/button.png" alt="Remover Bolacha">
+          </button>
+
+        </li>
+
+      </ul>
+
+      <div class="alert">
+
+        <img src="assets/alert.svg" alt="Alerta" class="alert-icon">
+
+        <p>O item foi removido da lista</p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="scripts.js"></script>
+
+</body>
+
+</html>
