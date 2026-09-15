@@ -12,22 +12,22 @@ console.log(alert);
 
 list.addEventListener('click', function (evento) {
 
-    if (evento.target.closest('.remove-item')) {
+  if (evento.target.closest('.remove-item')) {
 
     const removeButton = evento.target.closest('.remove-item');
 
     const item = removeButton.parentElement;
 
     console.log(item);
-    
+
     item.remove();
 
     alert.style.display = 'flex';
 
     setTimeout(function () {
-        alert.style.display = 'none';
+      alert.style.display = 'none';
     }, 3000);
-      
+
     console.log('item removido');
   }
 });
@@ -36,22 +36,21 @@ console.log(removeButtons);
 
 removeButtons.forEach(function (button) {
 
-    button.addEventListener('click', function () {
+  button.addEventListener('click', function () {
 
     const item = button.parentElement;
 
     console.log(item);
-    });
-});       
+  });
+});
 
 form.addEventListener('submit', function (evento) {
 
-    evento.preventDefault();
+  evento.preventDefault();
 
-    const itemName = input.value.trim();
+  const itemName = input.value.trim();
 
-    if (itemName !== '') {
-
+  if (itemName !== '') {
     const listItem = document.createElement('li');
 
     listItem.classList.add('shopping-item');
@@ -97,6 +96,7 @@ form.addEventListener('submit', function (evento) {
     listItem.appendChild(removeButton);
 
     list.appendChild(listItem);
-}
 
+    input.value = '';
+  }
 });
