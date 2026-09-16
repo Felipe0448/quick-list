@@ -98,5 +98,7 @@ form.addEventListener('submit', function (event) {
     list.appendChild(listItem);
 
     input.value = '';
+
+    input.focus();
   }
 });
