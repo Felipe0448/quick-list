@@ -10,11 +10,11 @@ alert.style.display = 'none';
 
 console.log(alert);
 
-list.addEventListener('click', function (evento) {
+list.addEventListener('click', function (event) {
 
-  if (evento.target.closest('.remove-item')) {
+  if (event.target.closest('.remove-item')) {
 
-    const removeButton = evento.target.closest('.remove-item');
+    const removeButton = event.target.closest('.remove-item');
 
     const item = removeButton.parentElement;
 
@@ -44,9 +44,9 @@ removeButtons.forEach(function (button) {
   });
 });
 
-form.addEventListener('submit', function (evento) {
+form.addEventListener('submit', function (event) {
 
-  evento.preventDefault();
+  event.preventDefault();
 
   const itemName = input.value.trim();
 
